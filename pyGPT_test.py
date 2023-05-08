@@ -19,7 +19,7 @@ while True:
     try:
         for token in model.generate(userQ):
             print(token, end='', flush=True)
-        uerQ = input(
+        userQ = input(
             f'\nKeep the conversation going with a new prompt or enter ctl + c to quit: ')
     except KeyboardInterrupt:
         break
